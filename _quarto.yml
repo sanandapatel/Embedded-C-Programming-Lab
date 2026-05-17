@@ -4,7 +4,7 @@ project:
 book:
   title: "Embedded C Programming Lab Manual"
   author: "SANANDA PATEL"
-  date: "9/18/2024"
+  date: "17-05-2026"
   cover-image: embedded_c_lab_logo.png
   chapters:
     - index.qmd
