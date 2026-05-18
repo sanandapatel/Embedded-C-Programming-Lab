@@ -1,0 +1,57 @@
+---
+number-depth: 2
+---
+
+# Arduino IDE: Getting Started and How-tos
+
+## Getting Started Guides
+
+- [Getting Started with Arduino IDE 2](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started-ide-v2/) - For installation and getting to know Arduino IDE v2.
+
+- [Getting Started with stm32duino](https://github.com/stm32duino/Arduino_Core_STM32/wiki/Getting-Started) - Wiki page for setting up Arduino IDE for STM32 boards.
+
+## Fix for STM32 Package Download Issues
+
+Some users may face issues while downloading or installing the STM32 board package through the Arduino IDE Boards Manager.
+
+In such cases, download the STM32 package folder from the link provided below and manually paste it into the following directory:
+
+```text
+C:\Users\<User name>\AppData\Local\Arduino15\staging\packages
+```
+
+[Download STM32 Package](https://drive.google.com/drive/folders/1QDyCPPpoqEFpplnwpqDDi5zEr-J3ryzf?usp=drive_link){target="_blank"}
+
+### Steps to Install the Package Manually
+
+1. Download the ZIP file from the link above.
+
+2. Extract the ZIP file using Windows Explorer or any archive extraction software such as 7-Zip or WinRAR.
+
+3. Open File Explorer and navigate to:
+
+   ```text
+   C:\Users\<User name>\AppData\Local\Arduino15\staging\packages
+   ```
+
+   Replace `<User name>` with your Windows PC username.
+
+4. Copy the extracted package files or folders into the `packages` directory.
+
+::: {.callout-warning}
+## Important
+
+Do not replace or overwrite the existing `packages` folder with the downloaded folder. Existing files may be lost or corrupted.
+
+Only copy the required extracted files/folders into the existing `packages` directory.
+:::
+
+5. Restart the Arduino IDE.
+
+6. Open:
+
+   ```text
+   Tools → Board → STM32 Boards
+   ```
+
+7. Select the required STM32 board and continue development normally.
